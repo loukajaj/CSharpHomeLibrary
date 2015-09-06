@@ -52,7 +52,7 @@ namespace WebApplication5.Controllers
         // GET: Authors/Create
         public ActionResult Create()
         {
-            return View();
+            return View("Form", new Author());
         }
 
         // POST: Authors/Create
@@ -84,7 +84,7 @@ namespace WebApplication5.Controllers
             {
                 return HttpNotFound();
             }
-            return View(author);
+            return View("Form", author);
         }
 
         // POST: Authors/Edit/5
